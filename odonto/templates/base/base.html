@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block link %}
+    {% endblock %}
+
+    <title>{% block title %}  {% endblock %}</title>
+    
+</head>
+<body>
+    {% include 'base/navbar.html' %}
+
+    {% block content %}
+    
+
+    {% endblock %}
+
+    {% include 'base/footer.html' %}
+
+    {% block script %}
+    {% endblock %}
+</body>
+</html>
