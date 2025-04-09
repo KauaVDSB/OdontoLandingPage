@@ -1,15 +1,129 @@
 {% extends 'base/base.html' %}
 
+{% block description %}
+<meta name="description" content="Consultório odontológico da Dra. Heloísa Barreto, oferecendo serviços de odontologia estética e avançada.">
+<meta name="keywords" content="odontologia, dentista, implantes, clareamento, ortodontia, lentes dentais, Pernambuco">
+{% endblock %}
+
 {% block link %}
 <link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='css/landing-responsivo.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/landing-responsivo.css') }}" media="(max-width: 768px)">
 {% endblock %}
 
 {% block title %} HB Odonto {% endblock %}
 
 
 {% block content %}
-<h1>HB Odonto</h1>
+<section class="hero">
+    <div class="hero-content">
+        <h1>Transformamos Sorrisos, Transformamos Vidas</h1>
+        <p>Especialistas em odontologia estética e funcional para oferecer o sorriso que você merece.</p>
+        <a href="#sobre" class="btn-saiba-mais">Saiba Mais</a>
+        <a href="#contato" class="btn-agendar-consulta">Agendar Consulta</a>
+    </div>
+    <div class="hero-image">
+        <img src="{{ url_for('static', filename='media/heroImage.webp') }}" loading="lazy" alt="Imagem ilustrativa do sorriso se um paciente feliz">
+    </div>
+</section>
+
+<section id="sobre" class="sobre">
+    <h2 class="sobre-titulo">Cuidando do Seu Sorriso com Dedicação e Excelência</h2>
+    <p class="sobre-descricao">
+        No consultório do Dr. Alexandre Silva, priorizamos a saúde bucal e o bem-estar de nossos pacientes. 
+        Com mais de 15 anos de experiência, combinamos tecnologia de ponta e atendimento personalizado para 
+        criar resultados impecáveis.
+    </p>
+    <div class="sobre-destaques">
+        <h3>Destaques</h3>
+        <ul>
+            <li><span>15+</span> anos de experiência</li>
+            <li><span>Mais de 10.000</span> sorrisos transformados</li>
+            <li><span>Especialista</span> em odontologia estética e funcional</li>
+        </ul>
+    </div>
+</section>
+
+<section id="servicos" class="servicos">
+    <h2 class="servicos-titulo">Nossos Serviços</h2>
+    <p class="servicos-descricao">Conheça nossas especialidades e encontre o tratamento ideal para você.</p>
+    <div class="servicos-lista">
+        
+        <article>
+            <h3>Implantes Dentários:</h3>
+            <p>Recupere seu sorriso e confiança com nossos implantes de alta tecnologia.</p>
+        </article>
+        <article>
+            <h3>Clareamento Dental:</h3>
+            <p>Dentes mais brancos e radiantes com técnicas seguras e eficazes.</p>
+        </article>
+        <article>
+            <h3>Lentes de Contato Dentais:</h3>
+            <p>Sorriso perfeito com a solução estética mais moderna.</p>
+        </article>
+        <article>
+            <h3>Ortodontia:</h3>
+            <p>Alinhe seus dentes com aparelhos tradicionais ou invisíveis.</p>
+        </article>
+        <article>
+            <h3>Tratamentos Restauradores:</h3>
+            <p>Recuperação funcional e estética para dentes danificados.</p>
+        </article>
+        
+    </div>
+</section>
+
+<section id="equipe" class="equipe">
+    <h2 class="equipe-titulo">Conheça Nossa Equipe</h2>
+    <p class="equipe-descricao">Profissionais altamente qualificados e apaixonados pelo que fazem.</p>
+    <div class="equipe-lista">
+        
+        <article>
+            <h3>Dra. Heloísa Barreto: </h3>
+            <p>Especialista em odontologia estética e reabilitação oral.</p>
+        </article>
+        <article>
+            <h3>Dra. Mariana Lopes: </h3>
+            <p>Ortodontista e especialista em alinhadores invisíveis.</p>
+        </article>
+        <article>
+            <h3>Dr. Ricardo Teixeira: </h3>
+            <p>Cirurgião-dentista com foco em implantes.</p>
+        </article>
+        <article>
+            <h3>Ana Paula Martins: </h3>
+            <p>Higienista dedicada ao seu bem-estar bucal.</p>
+        </article>
+        
+    </div>
+</section>
+
+<section id="contato" class="contato">
+    <h2 class="contato-titulo">Entre em contato</h2>
+    <p class="contato-descricao">Estamos prontos para atender você. Agende uma consulta ou tire suas dúvidas.</p>
+    <form action="{{ url_for('contato_submit') }}" method="post">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" aria-label="Digite seu nome" required>
+        
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" aria-label="Digite seu e-mail" required>
+        
+        <label for="telefone">Telefone</label>
+        <input type="tel" name="telefone" id="telefone" aria-label="Digite seu telefone" required>
+        
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem" aria-label="Digite sua mensagem" cols="30" rows="10" required></textarea>
+
+        <button type="submit" aria-label="Enviar mensagem">Enviar mensagem</button>
+    </form>
+
+    <div class="contato-info">
+        <ul>
+            <li><a href="tel:+5587999999999">+55 (87) 99999-9999</a></li>
+            <li><a href="mailto:contato@draheloisabarreto.com.br">contato@draheloisabarreto.com.br</a></li>
+            <li>Rua Quinze de Novembro, 123, Pernambuco - PE</li>
+        </ul>
+    </div>
+</section>
 
 
 {% endblock %}

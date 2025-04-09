@@ -6,3 +6,7 @@ from flask import render_template, url_for
 def landing():
 
     return render_template('view/index.html')
+
+@app.route('/')
+def contato_submit():
+    return

@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% block link %}
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Dra. Heloísa Barreto">
+    {% block description %}
+    <meta name="description" content="Consultório odontológico da Dra. Heloísa Barreto, oferecendo serviços de odontologia estética e avançada.">
+    <meta name="keywords" content="odontologia, dentista, implantes, clareamento, ortodontia, lentes dentais, Pernambuco">
     {% endblock %}
 
-    <title>{% block title %}  {% endblock %}</title>
+    {% block link %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    {% endblock %}
+
+    <title>{% block title %}Consultório Dra. Heloísa Barreto{% endblock %}</title>
     
 </head>
 <body>
