@@ -1,0 +1,70 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 90vh;
+    padding: 60px 6%;
+    background-color: var(--cor-secundario-claro);
+}
+
+.hero-content {
+    max-width: 50%;
+    align-content: center;
+    word-wrap: break-word;
+}
+.hero-content h1{
+    font-size: 2.8rem;
+    color: var(--cor-primaria-escura);
+    margin-bottom: 20px;
+}
+.hero-content p{
+    font-size: 1.2rem;
+    color: var(--cor-primaria-media);
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.hero-content .btn-saiba-mais, 
+.hero-content .btn-agendar-consulta {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 12px 20px;
+    border-radius: 8px;
+
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: color 0.3s ease-in-out, background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-saiba-mais{
+    color: var(--cor-secundaria-clara);
+    background-color: var(--cor-primaria-clara);
+}
+.btn-saiba-mais:hover {
+    background-color: var(--cor-primaria-media);
+    transform: translateY(-3px);
+}
+
+.btn-agendar-consulta{
+    color: var(--cor-primaria-escura);
+    background-color: var(--cor-dourado-claro);
+}
+.btn-agendar-consulta:hover{
+    color: var(--cor-dourado-claro);
+    background-color: var(--cor-primaria-clara);
+    transform: translateY(-3px);
+}
+
+.hero-image{
+    display: flex;
+    justify-content: right;
+}
+.hero-image img {
+    max-width: 90%;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
