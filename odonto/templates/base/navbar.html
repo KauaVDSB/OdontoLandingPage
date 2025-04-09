@@ -1,8 +1,10 @@
-<link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/base/navbar.css') }}">
 
 <header>
     <nav>
-        <div class="logo" aria-label="Logo do consultório da Dra. Heloísa Barreto">Dra. Heloísa Barreto</div>
+        <div class="logo" aria-label="Logo do consultório da Dra. Heloísa Barreto">
+            <a href="{{ url_for('landing') }}">HB Odonto</a>
+        </div>
         <div class="navbar">
             <ul>
                 <li><a href="#sobre" title="Saiba mais sobre nosso consultório">Sobre</a></li>
@@ -10,7 +12,7 @@
                 <li><a href="#equipe" title="Conheça nossa equipe">Nossa Equipe</a></li>
                 <li><a href="#contato" title="Entre em contato conosco">Contato</a></li>
             </ul>
-            <a href="#contato" class="CTA-button" title="Agende sua consulta">Agendar Consulta</a>
+            <a href="#contato" class="cta-button" title="Agende sua consulta">Agendar Consulta</a>
         </div>
     </nav>
 </header>

@@ -1,0 +1,32 @@
+:root{
+    --cor-primaria-escura: #5A0B17;
+    --cor-primaria-media: #7A1E2C;
+    --cor-primaria-clara: #A83B4A;
+
+    --cor-secundaria-escura: #C4B2A3;
+    --cor-secundaria-media: #E3D1BF;
+    --cor-secundaria-clara: #F5E8DA;
+
+    --cor-neutra-principal: #F0EDE8;
+    --cor-neutra-media: #D9D5CF;
+    --cor-neutra-escura: #BAB7B2;
+
+    --cor-dourado-claro: #F0D58C;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+body{
+    margin: 0;
+    background-color: var(--cor-neutra-principal);
+}
+
+ul li {
+    list-style: none;
+}

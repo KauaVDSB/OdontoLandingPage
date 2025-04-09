@@ -7,6 +7,6 @@ def landing():
 
     return render_template('view/index.html')
 
-@app.route('/')
+@app.route('/', methods=['POST'])
 def contato_submit():
-    return
+    return render_template('view/index.html')
