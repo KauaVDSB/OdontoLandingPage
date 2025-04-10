@@ -8,11 +8,16 @@
     --cor-secundaria-clara: #F5E8DA;
 
     --cor-neutra-principal: #F0EDE8;
+    --cor-neutra-clara: #f7f7f7;
     --cor-neutra-media: #D9D5CF;
     --cor-neutra-escura: #BAB7B2;
 
     --cor-bege-escuro: #8d6f52;
     --cor-dourado-claro: #F0D58C;
+
+    --cor-titulo-cinza: #333;
+    --cor-subtitulo-cinza: #444;
+    --cor-texto-cinza: #666;
 }
 
 
@@ -26,7 +31,7 @@ html {
 }
 body{
     margin: 0;
-    background-color: var(--cor-neutra-principal);
+    background-color: var(--cor-neutra-clara);
 }
 
 ul li {

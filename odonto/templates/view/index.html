@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/landing/landing.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/landing/hero.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/landing/landing-responsivo.css') }}" media="(max-width: 768px)">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/landing/all.css') }}">
 {% endblock %}
 
 {% block title %} HB Odonto {% endblock %}
@@ -56,32 +57,50 @@
             <p class="servicos-descricao">Conheça nossas especialidades e encontre o tratamento ideal para você.</p>
         
             <div class="servicos-lista">
-        
-                    <article>
-                        <div class="icone"></div>
-                        <h3>Implantes Dentários</h3>
-                        <p>Recupere seu sorriso com nossos implantes de alta tecnologia.</p>
-                    </article>
-                    <article>
-                        <div class="icone"></div>
-                        <h3>Clareamento Dental</h3>
-                        <p>Dentes mais brancos e radiantes com técnicas seguras e eficazes.</p>
-                    </article>
-                    <article>
-                        <div class="icone"></div>
-                        <h3>Lentes de Contato Dentais</h3>
-                    <p>Sorriso perfeito com a solução estética mais moderna.</p>
-                    </article>
-                    <article>
-                        <div class="icone"></div>
-                        <h3>Ortodontia</h3>
-                        <p>Alinhe seus dentes com aparelhos tradicionais ou invisíveis.</p>
-                    </article>
-                    <article>
-                        <div class="icone"></div>
-                        <h3>Tratamentos Restauradores</h3>
-                        <p>Recuperação funcional e estética para dentes danificados.</p>
-                    </article>
+                <div class="cards">
+
+                    <div class="card">
+    
+                        <article>
+                            <h3>Implantes Dentários</h3>
+                            <p>Recupere seu sorriso com nossos implantes de alta tecnologia.</p>
+                        </article>
+                    </div>    
+                    <div class="card">
+    
+                        <article>
+                            <h3>Clareamento Dental</h3>
+                            <p>Dentes mais brancos e radiantes com técnicas seguras e eficazes.</p>
+                        </article>
+                    </div>
+                    <div class="card">
+    
+                        <article>
+                            <h3>Lentes de Contato Dentais</h3>
+                            <p>Sorriso perfeito com a solução estética mais moderna.</p>
+                        </article>
+                    </div>
+                    <div class="card">
+    
+                        <article>
+                            <h3>Ortodontia</h3>
+                            <p>Alinhe seus dentes com aparelhos tradicionais ou invisíveis.</p>
+                        </article>
+                    </div>
+                    <div class="card">
+    
+                        <article>
+                            <h3>Tratamentos Restauradores</h3>
+                            <p>Recuperação funcional e estética para dentes danificados.</p>
+                        </article>
+                    </div>
+                    <div class="card">
+                        <article>
+                            <h3>Extrações de Dentes do Siso</h3>
+                            <p>Remova dentes problemáticos com segurança e conforto.</p>
+                        </article>
+                    </div>
+                </div>
                 
             </div>
         </section>
