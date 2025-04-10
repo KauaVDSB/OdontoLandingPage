@@ -1,0 +1,124 @@
+.contato {
+    padding: 60px 6%;
+    border-top-left-radius: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: var(--cor-titulo-cinza);
+    background-color: var(--cor-neutra-principal);
+}
+
+.contato-titulo {
+    margin-bottom: 10px;
+    
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--cor-primaria-escura);
+}
+
+.contato-descricao {
+    max-width: 600px;
+    margin-bottom: 40px;
+    
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--cor-texto-cinza);
+}
+
+.contato form {
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    background-color: white;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contato form label {
+    font-weight: bold;
+    color: var(--cor-primaria-media);
+}
+
+.contato form input,
+.contato form textarea {
+    padding: 12px;
+    border: 1px solid var(--cor-neutra-media);
+    border-radius: 10px;
+    resize: none;
+
+    font-size: 1rem;
+
+    color: #222;
+    background-color: var(--cor-neutra-clara);
+    transition: border 0.5s ease;
+}
+
+.contato form input:focus,
+.contato form textarea:focus {
+    outline: none;
+    border-color: var(--cor-primaria-clara);
+}
+
+.contato form button {
+    margin-top: 10px;
+    padding: 12px 30px;
+    align-self: center;
+
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--cor-secundaria-clara);
+    background-color: var(--cor-primaria-clara);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    transition: all 0.3s ease;
+}
+
+.contato form button:hover {
+    background-color: var(--cor-primaria-media);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+
+.contato-info {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contato-info ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-items: center;
+    color: var(--cor-subtitulo-cinza);
+}
+
+.contato-info ul li {
+    width: fit-content;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.contato-info ul li:has(a):hover {
+    transform: translateY(-5px);
+    color: var(--cor-primaria-escura);
+    text-decoration: underline;
+}
+
+.contato-info a {
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--cor-primaria-media);
+}

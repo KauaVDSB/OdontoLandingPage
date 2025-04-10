@@ -239,17 +239,3 @@
 .equipe-info-container p {
     color: var(--cor-subtitulo-cinza);
 }
-
-
-
-
-.contato {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contato form {
-    display: flex;
-    flex-direction: column;
-}

@@ -74,7 +74,7 @@
     width: 45%;
     height: 100%;
 
-    background: url(../../media/heroImg.png) no-repeat center center;
+    background: url(../../media/hbimage.png) no-repeat center center;
     background-size: 85%;
     clip-path: ellipse(100% 100% at 50% 50%);
     opacity: 0.8;
