@@ -1,12 +1,4 @@
-/* .cover-primario-escuro {
-    height: 105vh;
-    background-color: var(--cor-primaria-escura);
-}
-.cover-normal {
-    background-color: var(--cor-neutra-principal);
-    height: 99.5vh;
-    clip-path: ellipse(150% 75% at 50% 25%);
-} */
+
 .hero {
     display: flex;
     justify-content: space-between;
