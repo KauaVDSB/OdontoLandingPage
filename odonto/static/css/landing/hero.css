@@ -1,3 +1,12 @@
+/* .cover-primario-escuro {
+    height: 105vh;
+    background-color: var(--cor-primaria-escura);
+}
+.cover-normal {
+    background-color: var(--cor-neutra-principal);
+    height: 99.5vh;
+    clip-path: ellipse(150% 75% at 50% 25%);
+} */
 .hero {
     display: flex;
     justify-content: space-between;
@@ -54,7 +63,8 @@
     transform: translateY(-3px);
 }
 
-.btn-agendar-consulta{
+.hero-content .btn-agendar-consulta{
+    border-radius: 8px;
     color: var(--cor-primaria-escura);
     background-color: var(--cor-dourado-claro);
 }
@@ -78,9 +88,4 @@
     opacity: 0.8;
     z-index: 0;
 }
-/* .hero-image img {
-    max-width: 90%;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-} */
 
