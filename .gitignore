@@ -1,5 +1,6 @@
 .venv
 __pycache__
-deprecated
-teste.css
 .vercel
+
+listar.ps1
+estrutura.txt
