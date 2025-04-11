@@ -1,4 +1,5 @@
-<link rel="stylesheet" href="{{ url_for('static', filename='css/base/navbar.css') }}">
+<!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/base/navbar.css') }}"> -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/landing/responsivo/navbar.css') }}">
 
 <header>
     <nav>
@@ -7,6 +8,7 @@
         </div>
         <div class="navbar">
             <ul>
+                <button id="openButton" class="menu-toggle close" aria-label="Close menu">✖</button>
                 <li><a href="#sobre" title="Saiba mais sobre nosso consultório">Sobre</a></li>
                 <li><a href="#servicos" title="Saiba mais sobre nossos serviços">Serviços</a></li>
                 <li><a href="#equipe" title="Conheça nossa equipe">Nossa Equipe</a></li>
@@ -14,5 +16,37 @@
             </ul>
             <a href="#contato" class="cta-button" title="Agende sua consulta">Agendar Consulta</a>
         </div>
+        <button id="closeButton" class="menu-toggle open" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
 </header>
+
+<script>
+
+    const openButton = document.querySelector('.menu-toggle.open');
+    const closeButton = document.querySelector('.menu-toggle.close');
+    const navbar = document.querySelector('.navbar');
+
+
+
+    // Torna navbar lateral visível
+    openButton.addEventListener('click', () => {
+        navbar.classList.add('active');
+    });
+
+    // Esconde navbar lateral
+    closeButton.addEventListener('click', () => {
+        navbar.classList.remove('active');
+    });
+
+    // Fecha a navbar lateral em outras ocasiões
+    document.addEventListener('click', (event) => {
+        if (event.target !== navbar && event.target !== openButton)
+        {
+            navbar.classList.remove('active');
+        }
+    });
+</script>
