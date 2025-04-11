@@ -106,8 +106,7 @@ flask run
 
 | Versão Desktop | Versão Mobile |
 |----------------|---------------|
-| ![Desktop Screenshot](https://github.com/user-attachments/assets/6bb0c835-dcb7-4c1f-aa1a-b9c1de931d63) | 
-![Mobile Screenshot](https://github.com/user-attachments/assets/4dc99193-c3e6-4141-bda9-2cc91210b8d3) |
+| ![Desktop Screenshot](https://github.com/user-attachments/assets/6bb0c835-dcb7-4c1f-aa1a-b9c1de931d63) | ![Mobile Screenshot](https://github.com/user-attachments/assets/4dc99193-c3e6-4141-bda9-2cc91210b8d3) |
 
 ---
 
