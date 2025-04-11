@@ -137,6 +137,10 @@
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
 
+
+.servicos .card img {
+    width: 25%;
+}
 .servicos .card h3 {
     font-size: 1.5rem;
     color: var(--cor-subtitulo-cinza);
