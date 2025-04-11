@@ -1,0 +1,31 @@
+<div class="cover-primario-escuro">
+
+    <section id="contato" class="contato">
+        <h2 class="contato-titulo fade-section">Entre em contato</h2>
+        <p class="contato-descricao fade-section">Estamos prontos para atender você. Agende uma consulta ou tire suas dúvidas.</p>
+        
+        <form class="fade-section" action="{{ url_for('contato_submit') }}" method="post">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" aria-label="Digite seu nome" required>
+            
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" aria-label="Digite seu e-mail" required>
+            
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone" aria-label="Digite seu telefone" required>
+            
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" aria-label="Digite sua mensagem" rows="6" required></textarea>
+    
+            <button class="fade-section" type="submit" aria-label="Enviar mensagem">Enviar mensagem</button>
+        </form>
+    
+        <div class="contato-info">
+            <ul>
+                <li class="fade-section"><a href="tel:+5587999999999">+55 (87) 99999-9999</a></li>
+                <li class="fade-section"><a href="mailto:contato@draheloisabarreto.com.br">contato@draheloisabarreto.com.br</a></li>
+                <li class="fade-section">Rua Quinze de Novembro, 123, Garanhuns - PE</li>
+            </ul>
+        </div>
+    </section>
+</div>

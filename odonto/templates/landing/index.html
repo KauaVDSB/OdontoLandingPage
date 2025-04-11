@@ -1,0 +1,45 @@
+{% extends 'base/base.html' %}
+
+{% block description %}
+<meta name="description" content="Consultório odontológico da Dra. Heloísa Barreto, oferecendo serviços de odontologia estética e avançada.">
+<meta name="keywords" content="odontologia, dentista, implantes, clareamento, ortodontia, lentes dentais, Pernambuco">
+{% endblock %}
+
+{% block link %}
+
+    <!-- Desktop-first -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/landing/hero.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/landing/sobre.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/landing/servicos.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/landing/equipe.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/landing/contato.css') }}">
+
+
+    <!-- Responsivo -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/landing/responsivo/hero.css') }}" media="only screen and (max-width: 1024px)">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/landing/responsivo/sobre.css') }}" media="only screen and (max-width: 1024px)">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/landing/responsivo/servicos.css') }}" media="only screen and (max-width: 1024px)">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/landing/responsivo/equipe.css') }}" media="only screen and (max-width: 1024px)">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/landing/responsivo/contato.css') }}" media="only screen and (max-width:768px)">
+
+{% endblock %}
+
+{% block title %} HB Odonto {% endblock %}
+
+
+{% block content %}
+
+
+    {% include 'landing/components/hero.html' %}
+    {% include 'landing/components/sobre.html' %}
+    {% include 'landing/components/servicos.html' %}
+    {% include 'landing/components/equipe.html' %}
+    {% include 'landing/components/contato.html' %}
+
+
+{% endblock %}
+
+
+{% block script %}
+<script src="{{ url_for('static', filename='script/utils/intersection-animations.js') }}" defer></script>
+{% endblock %}

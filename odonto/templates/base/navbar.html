@@ -1,6 +1,3 @@
-<!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/base/navbar.css') }}"> -->
-<link rel="stylesheet" href="{{ url_for('static', filename='css/landing/responsivo/navbar.css') }}">
-
 <header>
     <nav>
         <div class="logo" aria-label="Logo do consultório da Dra. Heloísa Barreto">
@@ -22,29 +19,4 @@
     </nav>
 </header>
 
-<script>
-
-    const openButton = document.querySelector('.menu-toggle.open');
-    const closeButton = document.querySelector('.menu-toggle.close');
-    const navbar = document.querySelector('.navbar');
-
-
-
-    // Torna navbar lateral visível
-    openButton.addEventListener('click', () => {
-        navbar.classList.add('active');
-    });
-
-    // Esconde navbar lateral
-    closeButton.addEventListener('click', () => {
-        navbar.classList.remove('active');
-    });
-
-    // Fecha a navbar lateral em outras ocasiões
-    document.addEventListener('click', (event) => {
-        if (event.target !== navbar && event.target !== openButton)
-        {
-            navbar.classList.remove('active');
-        }
-    });
-</script>
+<script src="{{ url_for('static', filename='script/components/navbar.js')}}"></script>
