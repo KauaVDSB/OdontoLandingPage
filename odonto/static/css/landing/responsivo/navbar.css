@@ -75,14 +75,15 @@ header .cta-button:hover {
     cursor: pointer;
     border: none;
     background: none;
+    color: var(--cor-secundaria-clara);
 }
-
+/* 
 .menu-toggle.open span {
     width: 25px;
     height: 3px;
     background-color: var(--cor-secundaria-clara);
     border-radius: 2px;
-}
+} */
 
 .menu-toggle.close {
     align-self: flex-end;
