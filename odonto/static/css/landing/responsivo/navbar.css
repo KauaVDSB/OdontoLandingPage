@@ -76,6 +76,7 @@ header .cta-button:hover {
     border: none;
     background: none;
     color: var(--cor-secundaria-clara);
+    font-size: 1.5rem;
 }
 /* 
 .menu-toggle.open span {
