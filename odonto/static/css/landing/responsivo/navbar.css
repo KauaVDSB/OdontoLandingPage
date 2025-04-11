@@ -121,7 +121,7 @@ header .cta-button:hover {
     header nav .navbar.active::before {
         content: "HB Odonto";
         position: absolute;
-        top: 25px;
+        top: 30px;
         left: 6%;
         font-size: 1.5rem;
         font-weight: bold;
