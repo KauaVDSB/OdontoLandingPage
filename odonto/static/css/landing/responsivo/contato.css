@@ -1,0 +1,51 @@
+@media (max-width: 768px) {
+    .contato {
+        padding: 50px 5%;
+    }
+
+    .contato form {
+        padding: 20px;
+    }
+
+    .contato-descricao {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .contato form button {
+        width: 100%;
+    }
+
+    .contato-info ul li {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contato {
+        padding: 40px 4%;
+    }
+
+    .contato-titulo {
+        font-size: 1.5rem;
+    }
+
+    .contato-descricao {
+        font-size: 0.95rem;
+    }
+
+    .contato form {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .contato form input,
+    .contato form textarea {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    .contato form button {
+        font-size: 0.95rem;
+    }
+}
