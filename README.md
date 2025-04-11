@@ -67,7 +67,7 @@ pip install -r requirements.txt
 flask run
 ```
 O site estará disponível em http://127.0.0.1:5000
-(O arquivo .flaskenv já aponta para o main.py, então o flask run funcionará direto.)
+> (O arquivo .flaskenv já aponta para o main.py, então o flask run funcionará direto.)
 
 ---
 
@@ -112,9 +112,9 @@ Além disso, busquei aplicar:
 
 
 ## 📇 Contato & Portfólio
-📧 Seu Email: kauavdsb.jobs@email.com
-🔗 LinkedIn (https://www.linkedin.com/in/kauã-vinicius-dos-santos-barbosa-346b31344)
-💼 Portfólio - Em breve
-🐱 GitHub (https://github.com/KauaVDSB/)
+- 📧 Seu Email: kauavdsb.jobs@email.com
+- 🔗 LinkedIn (https://www.linkedin.com/in/kauã-vinicius-dos-santos-barbosa-346b31344)
+- 💼 Portfólio - Em breve
+- 🐱 GitHub (https://github.com/KauaVDSB/)
 
 ## 🎯 Projeto desenvolvido com atenção a cada detalhe. Obrigado por visitar!
