@@ -1,0 +1,114 @@
+/* Section Equipe */
+
+
+.equipe {
+    padding: 45px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    border-top-left-radius: 100px;
+    color: var(--cor-secundaria-clara);
+    /* background-color: var(--cor-primaria-escura); */
+    background: linear-gradient(320deg, var(--cor-primaria-escura) 70%, rgba(90, 11, 23, 0.2) 100%);
+}
+.equipe .equipe-header h2, 
+.equipe .equipe-header p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.equipe .equipe-header h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.equipe .equipe-header p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--cor-neutra-media);
+}
+
+.equipe-carrossel-wrapper {
+    width: 100%;
+    position: relative;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.equipe-carrossel {
+    display: flex;
+    width: calc(235%);
+
+    animation: carrossel-infinito 40s linear 50ms infinite;
+    will-change: transform;
+}
+
+.equipe-lista {
+    display: flex;
+}
+
+.equipe-lista article {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    color: var(--cor-titulo-cinza);
+    background-color: var(--cor-neutra-principal);
+    box-shadow: 0 8px 12px rgba(187, 38, 38, 0.3);
+
+    transition: all 0.4s ease;
+}
+
+
+.equipe-lista article:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(187, 38, 38, 0.5);
+}
+
+.equipe-imagem {
+    height: 250px;
+    border-radius: 20px 20px 0 0;
+    background-color: var(--cor-secundaria-media);
+    overflow: hidden;
+}
+
+.equipe-imagem img {
+    object-fit: cover;
+    width: 100%;
+}
+.imagem-low img {
+    margin-top: -20px;
+}
+
+.equipe-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+}
+
+.equipe-info-container h3,
+.equipe-info-container p{
+    margin: 0;
+    padding: 0;
+}
+.equipe-info-container p {
+    color: var(--cor-subtitulo-cinza);
+}
+
+
+@keyframes carrossel-infinito {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}

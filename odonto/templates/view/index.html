@@ -6,8 +6,9 @@
 {% endblock %}
 
 {% block link %}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/landing/landing.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/landing/hero.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/landing/landing.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/landing/equipe.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/landing/landing-responsivo.css') }}" media="(max-width: 768px)">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/landing/contato.css') }}">
 {% endblock %}
@@ -112,46 +113,112 @@
         <h2 class="equipe-titulo">Conheça Nossa Equipe</h2>
         <p class="equipe-descricao">Profissionais altamente qualificados e apaixonados pelo que fazem.</p>
     </div>
-    <div class="equipe-lista">
+    <div class="equipe-carrossel-wrapper">
+        <div class="equipe-carrossel">
+
+            <div class="equipe-lista">
         
-        <article>
-            <div class="equipe-imagem">
-                <img src="{{ url_for('static', filename='media/hbimage.png') }}" alt="">
+                <article>
+                    <div class="equipe-imagem imagem-low">
+                        <img src="{{ url_for('static', filename='media/hb_original.jpg') }}" alt="">
+                    </div>
+                    <div class="equipe-info-container">
+                        <h3>Dra. Heloísa Barreto: </h3>
+                        <p>Especialista em odontologia estética e reabilitação oral.</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="equipe-imagem">
+                        <img src="{{ url_for('static', filename='media/hb_variante_1.jpg') }}" alt="">
+                    </div>
+                    <div class="equipe-info-container">
+                        <h3>Dra. Mariana Lopes: </h3>
+                        <p>Ortodontista e especialista em alinhadores invisíveis.</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="equipe-imagem">
+                        <img src="{{ url_for('static', filename='media/hb_variante_3.jpg') }}" alt="">
+                    </div>
+                    <div class="equipe-info-container">
+                        <h3>Dr. Ricardo Teixeira: </h3>
+                        <p>Cirurgião-dentista com foco em implantes.</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="equipe-imagem">
+                        <img src="{{ url_for('static', filename='media/hb_variante_2.jpg') }}" alt="">
+                    </div>
+                    <div class="equipe-info-container">
+                        <h3>Ana Paula Martins: </h3>
+                        <p>Higienista dedicada ao seu bem-estar bucal.</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="equipe-imagem">
+                        <img src="{{ url_for('static', filename='media/hb_variante_4.jpg') }}" alt="">
+                    </div>
+                    <div class="equipe-info-container">
+                        <h3>Dr. Gustavo Almeida:</h3>
+                        <p>Especialista em endodontia, com abordagem humanizada e foco em conforto.</p>
+                    </div>
+                </article>
+                
             </div>
-            <div class="equipe-info-container">
-                <h3>Dra. Heloísa Barreto: </h3>
-                <p>Especialista em odontologia estética e reabilitação oral.</p>
-            </div>
-        </article>
-        <article>
-            <div class="equipe-imagem">
-                <img src="{{ url_for('static', filename='media/hbimage.png') }}" alt="">
-            </div>
-            <div class="equipe-info-container">
-                <h3>Dra. Mariana Lopes: </h3>
-                <p>Ortodontista e especialista em alinhadores invisíveis.</p>
-            </div>
-        </article>
-        <article>
-            <div class="equipe-imagem">
-                <img src="{{ url_for('static', filename='media/hbimage.png') }}" alt="">
-            </div>
-            <div class="equipe-info-container">
-                <h3>Dr. Ricardo Teixeira: </h3>
-                <p>Cirurgião-dentista com foco em implantes.</p>
-            </div>
-        </article>
-        <article>
-            <div class="equipe-imagem">
-                <img src="{{ url_for('static', filename='media/hbimage.png') }}" alt="">
-            </div>
-            <div class="equipe-info-container">
-                <h3>Ana Paula Martins: </h3>
-                <p>Higienista dedicada ao seu bem-estar bucal.</p>
-            </div>
-        </article>
+
+            <div class="equipe-lista">
         
+                <article>
+                    <div class="equipe-imagem imagem-low">
+                        <img src="{{ url_for('static', filename='media/hb_original.jpg') }}" alt="">
+                    </div>
+                    <div class="equipe-info-container">
+                        <h3>Dra. Heloísa Barreto: </h3>
+                        <p>Especialista em odontologia estética e reabilitação oral.</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="equipe-imagem">
+                        <img src="{{ url_for('static', filename='media/hb_variante_1.jpg') }}" alt="">
+                    </div>
+                    <div class="equipe-info-container">
+                        <h3>Dra. Mariana Lopes: </h3>
+                        <p>Ortodontista e especialista em alinhadores invisíveis.</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="equipe-imagem">
+                        <img src="{{ url_for('static', filename='media/hb_variante_3.jpg') }}" alt="">
+                    </div>
+                    <div class="equipe-info-container">
+                        <h3>Dr. Ricardo Teixeira: </h3>
+                        <p>Cirurgião-dentista com foco em implantes.</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="equipe-imagem">
+                        <img src="{{ url_for('static', filename='media/hb_variante_2.jpg') }}" alt="">
+                    </div>
+                    <div class="equipe-info-container">
+                        <h3>Ana Paula Martins: </h3>
+                        <p>Higienista dedicada ao seu bem-estar bucal.</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="equipe-imagem">
+                        <img src="{{ url_for('static', filename='media/hb_variante_4.jpg') }}" alt="">
+                    </div>
+                    <div class="equipe-info-container">
+                        <h3>Dr. Gustavo Almeida:</h3>
+                        <p>Especialista em endodontia, com abordagem humanizada e foco em conforto.</p>
+                    </div>
+                </article>
+                
+            </div>
+
+        </div>
     </div>
+    
 </section>
 
 <div class="cover-primario-escuro">
