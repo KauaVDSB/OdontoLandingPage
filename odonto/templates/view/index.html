@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/landing/equipe.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/landing/contato.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/landing/landing-responsivo.css') }}" media="(max-width: 1024px)">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/landing/responsivo/equipe.css') }}" media="(max-width: 1024px)">
 {% endblock %}
 
 {% block title %} HB Odonto {% endblock %}
@@ -31,21 +32,21 @@
 
 
 <section id="sobre" class="sobre">
-    <div class="sobre-imagem">
+    <div class="sobre-imagem fade-section">
         <img src="{{ url_for('static', filename='media/hbimage.png') }}" alt="">
     </div>
     <div class="sobre-contexto">
-        <h2 class="sobre-titulo">Cuidando do Seu Sorriso com Dedicação e Excelência</h2>
-        <p class="sobre-descricao">
+        <h2 class="sobre-titulo fade-section">Cuidando do Seu Sorriso com Dedicação e Excelência</h2>
+        <p class="sobre-descricao fade-section">
             No consultório da Dra. Heloísa Barreto, priorizamos a saúde bucal e o bem-estar de nossos pacientes. 
             Com mais de 15 anos de experiência, combinamos tecnologia de ponta e atendimento personalizado para 
             criar resultados impecáveis.
         </p>
         <div class="sobre-destaques">
             <ul>
-                <li><span>15+</span> <p>anos de experiência</p></li>
-                <li><span>10.000+</span> <p> sorrisos transformados</p></li>
-                <li><span>Especialista</span> <p> em odontologia estética e funcional</p></li>
+                <li class="fade-section"><span>15+</span> <p>anos de experiência</p></li>
+                <li class="fade-section"><span>10.000+</span> <p> sorrisos transformados</p></li>
+                <li class="fade-section"><span>Especialista</span> <p> em odontologia estética e funcional</p></li>
             </ul>
         </div>
     </div>
@@ -55,55 +56,55 @@
     <div class="cover-normal">
 
         <section id="servicos" class="servicos">
-            <h2 class="servicos-titulo">Nossos Serviços</h2>
-            <p class="servicos-descricao">Conheça nossas especialidades e encontre o tratamento ideal para você.</p>
+            <h2 class="servicos-titulo fade-section">Nossos Serviços</h2>
+            <p class="servicos-descricao fade-section">Conheça nossas especialidades e encontre o tratamento ideal para você.</p>
         
             <div class="servicos-lista">
                 <div class="cards">
 
-                    <div class="card">
+                    <div class="card fade-section">
     
                         <article>
-                            <img src="{{ url_for('static', filename='media/icones/implante.svg') }}" alt="" loading="lazy">
+                            <img class="fade-section" src="{{ url_for('static', filename='media/icones/implante.svg') }}" alt="" loading="lazy">
                             <h3>Implantes Dentários</h3>
                             <p>Recupere seu sorriso com nossos implantes de alta tecnologia.</p>
                         </article>
                     </div>    
-                    <div class="card">
+                    <div class="card fade-section">
     
                         <article>
-                            <img src="{{ url_for('static', filename='media/icones/clareamento.svg') }}" alt="" loading="lazy">
+                            <img class="fade-section" src="{{ url_for('static', filename='media/icones/clareamento.svg') }}" alt="" loading="lazy">
                             <h3>Clareamento Dental</h3>
                             <p>Dentes mais brancos e radiantes com técnicas seguras e eficazes.</p>
                         </article>
                     </div>
-                    <div class="card">
+                    <div class="card fade-section">
     
                         <article>
-                            <img src="{{ url_for('static', filename='media/icones/lente_dente.svg') }}" alt="" loading="lazy">
+                            <img class="fade-section" src="{{ url_for('static', filename='media/icones/lente_dente.svg') }}" alt="" loading="lazy">
                             <h3>Lentes de Contato Dentais</h3>
                             <p>Sorriso perfeito com a solução estética mais moderna.</p>
                         </article>
                     </div>
-                    <div class="card">
+                    <div class="card fade-section">
     
                         <article>
-                            <img src="{{ url_for('static', filename='media/icones/ortodontia.svg') }}" alt="" loading="lazy">
+                            <img class="fade-section" src="{{ url_for('static', filename='media/icones/ortodontia.svg') }}" alt="" loading="lazy">
                             <h3>Ortodontia</h3>
                             <p>Alinhe seus dentes com aparelhos tradicionais ou invisíveis.</p>
                         </article>
                     </div>
-                    <div class="card">
+                    <div class="card fade-section">
     
                         <article>
-                            <img src="{{ url_for('static', filename='media/icones/tratamento.svg') }}" alt="" loading="lazy">
+                            <img class="fade-section" src="{{ url_for('static', filename='media/icones/tratamento.svg') }}" alt="" loading="lazy">
                             <h3>Tratamentos Restauradores</h3>
                             <p>Recuperação funcional e estética para dentes danificados.</p>
                         </article>
                     </div>
-                    <div class="card">
+                    <div class="card fade-section">
                         <article>
-                            <img src="{{ url_for('static', filename='media/icones/siso.svg') }}" alt="" loading="lazy">
+                            <img class="fade-section" src="{{ url_for('static', filename='media/icones/siso.svg') }}" alt="" loading="lazy">
                             <h3>Extrações de Dentes do Siso</h3>
                             <p>Remova dentes problemáticos com segurança e conforto.</p>
                         </article>
@@ -125,7 +126,7 @@
 
             <div class="equipe-lista">
         
-                <article>
+                <article class="fade-cards">
                     <div class="equipe-imagem imagem-low">
                         <img src="{{ url_for('static', filename='media/hb_original.jpg') }}" alt="">
                     </div>
@@ -134,7 +135,7 @@
                         <p>Especialista em odontologia estética e reabilitação oral.</p>
                     </div>
                 </article>
-                <article>
+                <article class="fade-cards">
                     <div class="equipe-imagem">
                         <img src="{{ url_for('static', filename='media/hb_variante_1.jpg') }}" alt="">
                     </div>
@@ -143,7 +144,7 @@
                         <p>Ortodontista e especialista em alinhadores invisíveis.</p>
                     </div>
                 </article>
-                <article>
+                <article class="fade-cards">
                     <div class="equipe-imagem">
                         <img src="{{ url_for('static', filename='media/hb_variante_3.jpg') }}" alt="">
                     </div>
@@ -152,7 +153,7 @@
                         <p>Cirurgião-dentista com foco em implantes.</p>
                     </div>
                 </article>
-                <article>
+                <article class="fade-cards">
                     <div class="equipe-imagem">
                         <img src="{{ url_for('static', filename='media/hb_variante_2.jpg') }}" alt="">
                     </div>
@@ -161,7 +162,7 @@
                         <p>Higienista dedicada ao seu bem-estar bucal.</p>
                     </div>
                 </article>
-                <article>
+                <article class="fade-cards">
                     <div class="equipe-imagem">
                         <img src="{{ url_for('static', filename='media/hb_variante_4.jpg') }}" alt="">
                     </div>
@@ -265,5 +266,29 @@
 
 
 {% block script %}
-
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const elements = document.querySelectorAll('.fade-section');
+        const cards = document.querySelectorAll('.fade-cards');
+        const equipe_carrossel = document.querySelectorAll('.equipe-carrossel'); 
+    
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 150); // atraso progressivo
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+    
+        elements.forEach(el => observer.observe(el));
+        cards.forEach(car => observer.observe(car));
+        equipe_carrossel.forEach(ec => observer.observe(ec));
+    });
+</script>
+    
 {% endblock %}

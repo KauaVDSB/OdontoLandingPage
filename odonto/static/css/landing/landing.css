@@ -164,3 +164,27 @@
     border-bottom-right-radius: 100px;
     /* clip-path: ellipse(150% 75% at 50% 25%); */
 }
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fade-section.visible {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.servicos .card img {animation-delay: 2s;}
