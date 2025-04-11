@@ -60,6 +60,10 @@
         font-size: 0.9rem;
     }
 
+    .footer-info-contato ul li{
+        padding: 0 6%;
+    }
+
     .footer-copy {
         font-size: 0.8rem;
         padding-top: 10px;
