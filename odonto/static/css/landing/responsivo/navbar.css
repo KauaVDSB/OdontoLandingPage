@@ -103,18 +103,43 @@ header .cta-button:hover {
         flex-direction: column;
         background-color: var(--cor-primaria-escura);
         padding: 20px 0;
-        display: none;
+        /* display: none; */
         gap: 20px;
 
         opacity: 0;
+        z-index: -2;
         transform: translateY(-20px);
-        transition: all 1s ease;
+        transition: all 0.5s ease-out;
     }
     
     header nav .navbar.active {
         display: flex;
         opacity: 1;
+        z-index: 99;
         transform: translateY(0);
+    }
+    header nav .navbar.active::before {
+        content: "HB Odonto";
+        position: absolute;
+        top: 25px;
+        left: 6%;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--cor-secundaria-clara);
+
+        animation: logo 0.5s ease-out 1;
+    }
+
+    @keyframes logo {
+        from {
+            transform: translateY(-20px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
     
     
@@ -139,9 +164,18 @@ header .cta-button:hover {
         width: 80%;
         text-align: center;
     }
+
 }
 
 
+header .logo a {
+    /* position: absolute; */
+    /* margin-top: -15px; */
+    display: block;
+    z-index: 9999999;
+
+    transition: all 0.5s ease-in-out;
+}
 .menu-toggle.close {
     margin-right: 6%;
     color: var(--cor-secundaria-clara);
@@ -154,9 +188,3 @@ header .cta-button:hover {
     text-align: center;
 }
 
-header .logo a {
-    position: absolute;
-    margin-top: -15px;
-    display: block;
-    z-index: 9999999;
-}
